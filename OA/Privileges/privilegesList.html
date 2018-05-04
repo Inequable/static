@@ -1,0 +1,315 @@
+<!-- 权限列表  privilegesList -->
+<script type="text/javascript" src="public/js/PLpopup.js"></script>
+<div class="table-responsive PL">
+	<form action="" method="post">
+		<table class="table table-bordered" style="background-color: skyblue;">
+			<caption class="text-center form-inline">
+				<div class="form-group">
+					<lable>设置角色权限：</lable>
+					<select class="form-control">
+						<option value="">请选择角色</option>
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<lable>设置用户权限：</lable>
+					<input type="text" name="" class="form-control" disabled placeholder="请选择用户" /> <a href="javascript:;">+选择用户</a>
+				</div>
+			</caption>
+			<thead>
+				<tr>
+					<th>系统模块</th>
+					<th colspan="6">功能列表</th>
+				</tr>
+			</thead>
+			<tbody>
+			<!-- 公共办公系统start -->
+				<tr>
+					<td rowspan="7" class="level0"><input type="checkbox" name="" class="form-control" /> 公共办公系统</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 知识管理</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 下载中心</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 规章制度</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 档案中心</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 网络硬盘</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 实用工具</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 人力资源</td>
+					<td><input type="checkbox" name="" class="form-control" /> 部门设置</td>
+					<td><input type="checkbox" name="" class="form-control" /> 岗位设置</td>
+					<td><input type="checkbox" name="" class="form-control" /> 档案管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 培训记录</td>
+					<td><input type="checkbox" name="" class="form-control" /> 奖惩记录</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 职位变更</td>
+					<td><input type="checkbox" name="" class="form-control" /> 人事合同</td>
+					<td><input type="checkbox" name="" class="form-control" /> 类别维护</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 客户管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 客户信息</td>
+					<td><input type="checkbox" name="" class="form-control" /> 查看全部客户</td>
+					<td><input type="checkbox" name="" class="form-control" /> 代理商信息</td>
+					<td><input type="checkbox" name="" class="form-control" /> 联系人信息</td>
+					<td><input type="checkbox" name="" class="form-control" /> 采购信息</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 项目</td>
+					<td><input type="checkbox" name="" class="form-control" /> 跟单记录</td>
+					<td><input type="checkbox" name="" class="form-control" /> 合同管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 故障维修</td>
+					<td><input type="checkbox" name="" class="form-control" /> 客户管理维护</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 系统管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 组织机构</td>
+					<td><input type="checkbox" name="" class="form-control" /> 岗位定义</td>
+					<td><input type="checkbox" name="" class="form-control" /> 用户账号</td>
+					<td><input type="checkbox" name="" class="form-control" /> 权限组</td>
+					<td><input type="checkbox" name="" class="form-control" /> 公共通讯组</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 系统日志</td>
+					<td><input type="checkbox" name="" class="form-control" /> 基础数据设置</td>
+					<td><input type="checkbox" name="" class="form-control" /> 后台数据设置</td>
+				</tr>
+				<!-- 公共办公系统end -->
+				<!-- 个人办公系统start -->
+				<tr>
+					<td rowspan="2" class="level0"><input type="checkbox" name="" class="form-control" /> 个人办公系统</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 短消息</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 文件传递</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 个人文件柜</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 电子邮件</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 手机短信</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 个人考勤</td>
+				</tr>
+				<tr>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 今日外出</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 通讯录</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 全文检索</td>
+					<td class="level1"></td>
+					<td class="level1"></td>
+					<td class="level1"></td>
+				</tr>
+				<!-- 个人办公系统end -->
+				<!-- 网上交流系统start -->
+				<tr>
+					<td class="level0"><input type="checkbox" name="" class="form-control" /> 网上交流系统</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 论坛</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 投票</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 领导信箱</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 视频会议</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 实时聊天</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> NetMeeting</td>
+				</tr>
+				<!-- 网上交流系统end -->
+				<!-- 时间&任务系统start -->
+				<tr>
+					<td rowspan="3" class="level0"><input type="checkbox" name="" class="form-control" /> 时间&任务系统</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 我的工作日程</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 他人工作日程</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 工作任务</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 工作日记</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 工作计划</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 工作管理权限</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 任务管理</td>
+					<td class="level11"><input type="checkbox" name="" class="form-control" /> 任务桌面</td>
+					<td class="level11"><input type="checkbox" name="" class="form-control" /> 批量任务</td>
+					<td class="level11"><input type="checkbox" name="" class="form-control" /> 按项目查看</td>
+					<td class="level11"><input type="checkbox" name="" class="form-control" /> 任务查询</td>
+					<td class="level11"><input type="checkbox" name="" class="form-control" /> 我的任务</td>
+				</tr>
+				<tr>
+					<td class="level11"><input type="checkbox" name="" class="form-control" /> 绩效统计</td>
+					<td class="level11"><input type="checkbox" name="" class="form-control" /> 任务督办</td>
+					<td class="level11"><input type="checkbox" name="" class="form-control" /> 任务管理设置</td>
+				</tr>
+				<!-- 时间&任务系统end -->
+				<!-- 审批流转系统start -->
+				<tr>
+					<td rowspan="2" class="level0"><input type="checkbox" name="" class="form-control" /> 审批流转系统</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 起草申请</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 我的申请查询</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 待我审批</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 按项目查看</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 文件阅读</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 表单管理</td>
+				</tr>
+				<tr>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 审批数据查询</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 报表查看</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 审批管理</td>
+					<td class="level1"></td>
+					<td class="level1"></td>
+					<td class="level1"></td>
+				</tr>
+				<!-- 审批流转系统end -->
+				<!-- 公文管理系统start -->
+				<tr>
+					<td rowspan="4" class="level0"><input type="checkbox" name="" class="form-control" /> 公文管理系统</td>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 发文管理系统</td>
+					<td><input type="checkbox" name="" class="form-control" /> 发文拟稿</td>
+					<td><input type="checkbox" name="" class="form-control" /> 发文审批</td>
+					<td><input type="checkbox" name="" class="form-control" /> 领导签发</td>
+					<td><input type="checkbox" name="" class="form-control" /> 发文登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 发文打印</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 发文盖章</td>
+					<td><input type="checkbox" name="" class="form-control" /> 文件分发</td>
+					<td><input type="checkbox" name="" class="form-control" /> 发文监控</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 收文管理系统</td>
+					<td><input type="checkbox" name="" class="form-control" /> 收文登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 收文拟办</td>
+					<td><input type="checkbox" name="" class="form-control" /> 领导批示</td>
+					<td><input type="checkbox" name="" class="form-control" /> 收文分发</td>
+					<td><input type="checkbox" name="" class="form-control" /> 收文阅读</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 承办结果</td>
+					<td><input type="checkbox" name="" class="form-control" /> 收文监控</td>
+					<td><input type="checkbox" name="" class="form-control" /> 收文类别</td>
+				</tr>
+				<!-- 公文管理系统end -->
+				<!-- 信息发布系统start -->
+				<tr>
+					<td rowspan="2" class="level0"><input type="checkbox" name="" class="form-control" /> 信息发布系统</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 新闻</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 图片新闻</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 公告</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 通知</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 部门主页</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 电子期刊</td>
+				</tr>
+				<tr>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 大事记</td>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 公司相册</td>
+					<td class="level1"></td>
+					<td class="level1"></td>
+					<td class="level1"></td>
+					<td class="level1"></td>
+				</tr>
+				<!-- 信息发布系统end -->
+				<!-- 综合行政系统start -->
+				<tr>
+					<td rowspan="10" class="level0"><input type="checkbox" name="" class="form-control" /> 综合行政系统</td>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 考勤管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 工作时间设定</td>
+					<td><input type="checkbox" name="" class="form-control" /> 补签登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 外出登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 加班登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 出差登记</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 考勤查看</td>
+					<td><input type="checkbox" name="" class="form-control" /> 请假查询</td>
+					<td><input type="checkbox" name="" class="form-control" /> 外出查询</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 会议管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 会议申请</td>
+					<td><input type="checkbox" name="" class="form-control" /> 暂存会议申请</td>
+					<td><input type="checkbox" name="" class="form-control" /> 待我参加会议</td>
+					<td><input type="checkbox" name="" class="form-control" /> 我已参加会议</td>
+					<td><input type="checkbox" name="" class="form-control" /> 新建会议纪要</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 会议纪要查询</td>
+					<td><input type="checkbox" name="" class="form-control" /> 待开会议查询</td>
+					<td><input type="checkbox" name="" class="form-control" /> 已开会议查询</td>
+					<td><input type="checkbox" name="" class="form-control" /> 会议室查询</td>
+					<td><input type="checkbox" name="" class="form-control" /> 会议类型设置</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 车辆管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 用车申请</td>
+					<td><input type="checkbox" name="" class="form-control" /> 派车管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 我的申请记录</td>
+					<td><input type="checkbox" name="" class="form-control" /> 车辆状态</td>
+					<td><input type="checkbox" name="" class="form-control" /> 车辆档案</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 私车公用</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="level1"><input type="checkbox" name="" class="form-control" /> 办公用品</td>
+					<td><input type="checkbox" name="" class="form-control" /> 新建物品</td>
+					<td><input type="checkbox" name="" class="form-control" /> 购买登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 领用登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 在库查询</td>
+					<td><input type="checkbox" name="" class="form-control" /> 领用查询</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" class="form-control" /> 物品类别</td>
+				</tr>
+				<tr>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 图书管理</td>
+					<td><input type="checkbox" name="" class="form-control" /> 图书登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 图书查询</td>
+					<td><input type="checkbox" name="" class="form-control" /> 借阅登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 返还登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 图书类别</td>
+				</tr>
+				<tr>
+					<td class="level1"><input type="checkbox" name="" class="form-control" /> 固定资产</td>
+					<td><input type="checkbox" name="" class="form-control" /> 资产登记</td>
+					<td><input type="checkbox" name="" class="form-control" /> 资产查询</td>
+					<td><input type="checkbox" name="" class="form-control" /> 资产折旧</td>
+					<td><input type="checkbox" name="" class="form-control" /> 资产类别</td>
+					<td><input type="checkbox" name="" class="form-control" /> 折旧类别</td>
+				</tr>
+				<!-- 综合行政系统end -->
+				<tr style="background-color: white;">
+					<td colspan="7"><button class="btn btn-sm btn-success" type="submit">确认并分配权限</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+	<!-- 拥有分配权限的管理人——列表 -->
+	<table class="table table-bordered table-striped table-hover">
+		<caption class="text-center">拥有分配权限的管理人——列表</caption>
+		<thead>
+			<tr>
+				<th>员工编号</th>
+				<th>员工姓名</th>
+				<th>在职岗位</th>
+				<th>任职时间</th>
+				<th>权限分配宽度</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>20170806121200</td>
+				<td>杨文迪</td>
+				<td>网站架构师</td>
+				<td>10年</td>
+				<td>所有权限</td>
+			</tr>
+			<tr>
+				<td>20170806121200</td>
+				<td>user</td>
+				<td>网站架构师</td>
+				<td>10年</td>
+				<td>
+					<div title="公共办公系统：人力资源 下载中心 规章制度 档案中心 网络硬盘 实用工具 档案中心 网络硬盘 实用工具">公共办公系统：人力资源 下载中心 规章制度 档案中心 网络硬盘 实用工具 档案中心 网络硬盘 实用工具...</div>
+					<div>公共办公系统：</div>
+					<div>公共办公系统：</div>
+					<div>公共办公系统：</div>
+					<div>公共办公系统：</div>
+					<div>公共办公系统：</div>
+					<div>公共办公系统：</div>
+					<div>公共办公系统：</div>
+					<div>公共办公系统：</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

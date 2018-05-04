@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,itial-scale=1, maximum-scale=1">
+	<title>名单列表</title>
+	<link rel="stylesheet" type="text/css" href="../public/style/bootstrap.min.css" />
+	<script type="text/javascript" src="../public/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../public/js/layer/layer.js"></script>
+	<script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../public/js/NLpopup.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="NL_head" style="margin-top: 10px;">
+			<form action="" method="post">
+				<ul class="list-inline text-center" style="margin-top: 10px;">
+					<li>已选择人员：<input type="text" name="username2" readonly /></li>
+					<li>查询人员：<input type="text" name="username" /></li>
+					<li><button type="submit" class="btn btn-success btn-sm">搜索</button></li>
+					<li><button class="btn btn-success btn-sm" id="transmit">确定</button></li>
+				</ul>
+
+				<div class="panel-group text-center" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse0">
+									经理
+								</a>
+							</h4>
+						</div>
+						<div id="collapse0" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<ul class="list-inline text-center">
+									<li><label><input type="radio" name="username1" value="杨文迪" />杨文迪</label></li>
+									<li><label><input type="radio" name="username1" value="迪" />迪</label></li>
+									<li><label><input type="radio" name="username1" value="我" />我</label></li>
+									<li><label><input type="radio" name="username1" value="你" />你</label></li>
+									<li><label><input type="radio" name="username1" value="杨文迪" />杨文迪</label></li>
+									<li><label><input type="radio" name="username1" value="迪1" />迪1</label></li>
+									<li><label><input type="radio" name="username1" value="我1" />我1</label></li>
+									<li><label><input type="radio" name="username1" value="你1" />你1</label></li>
+									<li><label><input type="radio" name="username1" value="杨文迪1" />杨文迪1</label></li>
+									<li><label><input type="radio" name="username1" value="迪" />迪</label></li>
+									<li><label><input type="radio" name="username1" value="我" />我</label></li>
+									<li><label><input type="radio" name="username1" value="你" />你</label></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+									经理
+								</a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul class="list-inline text-center">
+									<li>222</li>
+									<li>222</li>
+									<li>222</li>
+									<li>222</li>
+									<li>222</li>
+									<li>222</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>

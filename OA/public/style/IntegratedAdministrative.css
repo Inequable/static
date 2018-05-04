@@ -1,0 +1,21 @@
+/* 综合行政系统所有样式 */
+/* 此样式形式，必须以有关的html文件名的“前缀+_”开头，以便查找修改 */
+
+/* 会议申请（ConferenceApplication）前缀以 CA_ 开头 */ 
+.ConferenceApplication{}
+.ConferenceApplication .form-control{
+	width: auto;
+	height: auto;
+}
+.ConferenceApplication .table > tbody > tr > th{
+	vertical-align: middle; 
+}
+.ConferenceApplication .table > tbody > tr > th .CA_span{
+	overflow-x: overlay;
+	display: -webkit-inline-box;/*兼容谷歌*/
+	display: -ms-inline-flexbox;/*兼容IE*/
+	display: ruby;
+}
+.ConferenceApplication textarea{
+	resize:none
+}

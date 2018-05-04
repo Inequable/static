@@ -1,0 +1,57 @@
+<!-- 个人信息管理 -->
+<div class="personal_information table-responsive">
+	<form action="" method="post" enctype="multipart/form-data">
+		<table class="table table-bordered table-striped">
+			<tbody>
+				<tr>
+					<th>员工姓名：</th>
+					<th><input type="text" name="" class="form-control" disabled value="杨文迪" /></th>
+					<th>头像：</th>
+					<th><input type="file" name=""></th>
+				</tr>
+				<tr>
+					<th>所属权限组：</th>
+					<th><input type="text" name="" class="form-control" disabled value="系统管理组" /></th>
+					<th>所属顶级部门：</th>
+					<th><input type="text" name="" class="form-control" disabled value=""></th>
+				</tr>
+				<tr>
+					<th>在职岗位：</th>
+					<th><input type="text" name="" class="form-control" disabled value=""></th>
+					<th>性别：</th>
+					<th>
+						<label class="radio-inline"> 
+					      <input type="radio"  value="" name="sex">男 
+					    </label> 
+					    <label class="radio-inline"> 
+					      <input type="radio"  value="" name="sex">女  
+					    </label> 
+				    </th>
+				</tr>
+				<tr>
+					<th>生日：</th>
+					<th><input type="text" name="" class="form-control" onclick="WdatePicker()" readonly /></th>
+					<th>手机：<span style="color: red;">(*)</span></th>
+					<th><input type="text" name="" class="form-control"></th>
+				</tr>
+				<tr>
+					<th>电子邮件：</th>
+					<th><input type="text" name="" class="form-control" /></th>
+					<th>qq：</th>
+					<th><input type="text" name="" class="form-control"></th>
+				</tr>
+				<tr>
+					<th>微信：</th>
+					<th><input type="text" name="" class="form-control" /></th>
+					<th>联系地址：</th>
+					<th><input type="text" name="" class="form-control"></th>
+				</tr>
+				<tr>
+					<th>个人说明：</th>
+					<th><textarea name="" class="form-control"></textarea></th>
+				</tr>
+			</tbody>
+		</table>
+		<button type="submit" class="btn btn-success center-block">确认提交</button>
+	</form>
+</div>

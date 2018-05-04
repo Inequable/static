@@ -1,0 +1,83 @@
+<!-- 会议申请（ConferenceApplication） -->
+<script src="public/js/CApopup.js"></script>
+<div class="ConferenceApplication table-responsive">
+	<form action="" method="post">
+		<table class="table table-bordered table-striped">
+			<tbody>
+				<tr>
+					<th>会议开始时间：<span style="color: red;">(*)</span></th>
+					<th><input type="text" name="" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})" readonly/></th>
+				</tr>
+				<tr>
+					<th>会议结束时间：<span style="color: red;">(*)</span></th>
+					<th><input type="text" name="" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})" readonly/></th>
+				</tr>
+				<tr>
+					<th>申请人：<span style="color: red;">(*)</span></th>
+					<th>
+						<span class="CA_span"><input type="text" name="" class="form-control" disabled value="" />&ensp;<a href="javascript:;">+选择申请人</a></span>
+						&ensp;
+						<span class="CA_span">提醒申请人：<input type="checkbox" name="" class="form-control" checked />&ensp;短消息提示</span>
+					</th>
+				</tr>
+				<tr>
+					<th>会议记录员：<span style="color: red;">(*)</span></th>
+					<th>
+						<span class="CA_span"><input type="text" name="" class="form-control" disabled value="" />&ensp;<a href="javascript:;">+选择记录员</a></span>
+					</th>
+				</tr>
+				<tr>
+					<th>会议出勤人员：<span style="color: red;">(*)</span></th>
+					<th>
+						<span class="CA_span"><textarea name="" class="form-control" disabled></textarea>&ensp;<a href="javascript:;">+选择出勤员</a></span>
+						&ensp;
+						<span class="CA_span">提醒出勤人员：<input type="checkbox" name="" class="form-control" checked />&ensp;短消息提示</span>
+					</th>
+				</tr>
+				<tr>
+					<th>审批人：<span style="color: red;">(*)</span></th>
+					<th>
+						<span class="CA_span"><input type="text" name="" class="form-control" disabled value="" />&ensp;<a href="javascript:;">+选择审批人</a></span>
+						&ensp;
+						<span class="CA_span">提醒审批人：<input type="checkbox" name="" class="form-control" checked />&ensp;短消息提示</span>
+					</th>
+				</tr>
+				<tr>
+					<th>会议名称：<span style="color: red;">(*)</span></th>
+					<th><input type="text" name="" class="form-control" /></th>
+				</tr>
+				<tr>
+					<th>会议主题：<span style="color: red;">(*)</span></th>
+					<th><input type="text" name="" class="form-control" /></th>
+				</tr>
+				<tr>
+					<th>会议室：<span style="color: red;">(*)</span></th>
+					<th>
+						<select name="" class="form-control">
+							<option value="">请选择会议室</option>
+							<option value="">2楼301室大礼堂</option>
+							<option value="">CEO办公室</option>
+							<option value="">家</option>
+						</select>
+					</th>
+				</tr>
+				<tr>
+					<th>会议类别：<span style="color: red;">(*)</span></th>
+					<th>
+						<select name="" class="form-control">
+							<option value="">请选择会议类别</option>
+							<option value="">谈情</option>
+							<option value="">说爱</option>
+							<option value="">其他</option>
+						</select>
+					</th>
+				</tr>
+				<tr>
+					<th>描述：</th>
+					<th><textarea name="" class="form-control" rows="3" cols="50"></textarea></th>
+				</tr>
+			</tbody>
+		</table>
+		<button type="submit" class="btn btn-success center-block">确认提交</button>
+	</form>
+</div>

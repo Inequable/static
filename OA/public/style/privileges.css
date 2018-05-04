@@ -1,0 +1,31 @@
+/* 权限系统	 privileges */
+/* privilegesList */
+.PL .form-control{
+	width: auto;
+	display: inline;
+	height: auto;
+}
+.PL .table > tbody > tr > td,.PL .table > tbody > tr th{
+	text-align: center;
+	vertical-align: middle;
+}
+.PL .table > thead > tr > th {
+    text-align: center;
+	vertical-align: middle;
+	background-color: rgb(165, 42, 42);
+	color: white;
+}
+.PL .level0{
+	background-color: rgb(173, 255, 47);
+	font-weight: 800;
+}
+.PL .level1{
+	background-color: rgb(238, 130, 238);
+	font-weight: 600;
+}
+/*.PL .level2{
+	background-color: rgb(135, 206, 235);
+}*/
+.PL .table-striped .text-center{
+	font-size: 18px;
+}

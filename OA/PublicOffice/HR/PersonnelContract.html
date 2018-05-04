@@ -1,0 +1,297 @@
+<!-- 人事合同（Personnel contract） -->
+<script type="text/javascript" src="public/js/PCpopup.js"></script>
+<div class="well well-sm contract">
+	<form action="" method="post" class="form-inline">
+		<div class="form-group">
+			<label for="username">员工单位：</label>
+			<select name="username" class="form-control">
+				<option value="">请选择...</option>
+				<option value="1">┣总经理</option>
+				<option value="2">┣市场部</option>
+				<option value="3">&ensp;┣咨询部</option>
+				<option value="4">&ensp;┣招生部</option>
+				<option value="5">&ensp;&ensp;┣招生部</option>
+				<option value="6">┣招生部</option>
+			</select>
+			&nbsp;
+			<label for="userNum">员工编号：</label>
+			<input type="text" name="userNum" class="form-control" size="10"  placeholder="员工编号" /> 
+		</div>
+		&nbsp;
+		<div class="form-group">
+			<label for="contract_type">合同类型：</label>
+			<select name="contract_type" class="form-control">
+				<option value="">请选择...</option>
+				<option value="1">劳务合同</option>
+				<option value="2">保密合同</option>
+				<option value="3">其它</option>
+			</select>
+		</div>
+		&nbsp;
+		<div class="form-group">
+			<label for="contract_state">合同状态：</label>
+			<select name="contract_state" class="form-control">
+				<option value="">请选择...</option>
+				<option value="1">试用期</option>
+				<option value="2">已转正</option>
+				<option value="3">已解除</option>
+			</select>
+		</div>
+		&nbsp;
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-sm">查询</button>
+		</div>
+		&nbsp;
+		<div class="form-group">
+			<button type="button" class="btn btn-default btn-sm" id="contract_more">切换更多查询 +</button>
+		</div>
+		&nbsp;
+		<div class="contract_more" style="display: none;">
+			<div class="form-group">
+				<label for="singDate">合同签订日期：</label>
+				<input type="text" name="singDate" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" readonly />
+			</div>
+			&nbsp;
+			<div class="form-group">
+				<label for="singDate_out">合同到期日期：</label>
+				<input type="text" name="singDate_out" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" readonly />
+			</div>
+		</div>
+	</form>
+	<div class="contract_list table-responsive">
+		<div class="data-wrap">
+			<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#contract_add">发布信息</button>
+			<button type="button" class="btn btn-danger btn-sm optionDel">清除记录</button>
+			<button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#contract_rule">查询规则</button>
+		</div>
+		<table class="table table-hover table-striped">
+			<thead>
+				<tr>
+					<th>
+						<span title="点击全选/反选">
+							<input type="checkbox" value="" id="all" />
+						</span>
+					</th>
+					<th>合同编号</th>
+					<th>员工名称</th>
+					<th>合同类型</th>
+					<th>合同状态</th>
+					<th>签订日期</th>
+					<th>合同到期日期</th>
+					<th>员工单位</th>
+					<th>发布人</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>
+						<input type="checkbox" value="1">
+					</th>
+					<th>001001001001</th>
+					<th>杨文迪真的好</th>
+					<th>劳务合同</th>
+					<th>已转正</th>
+					<th>2017-07-20</th>
+					<th>2017-07-20</th>
+					<th>产品经理</th>
+					<th>杨文迪真的好</th>
+					<th>
+						<button type="button" class="btn btn-success btn-sm">修改</button>
+						<button type="button" class="btn btn-danger btn-sm optionDel">清除</button>
+						<a href="javascript:;" class="btn btn-info btn-sm">详情</a>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<input type="checkbox" value="2">
+					</th>
+					<th>001001001001</th>
+					<th>杨文迪真的好</th>
+					<th>劳务合同</th>
+					<th>已转正</th>
+					<th>2017-07-20</th>
+					<th>2017-07-20</th>
+					<th>产品经理</th>
+					<th>杨文迪真的好</th>
+					<th>
+						<button type="button" class="btn btn-success btn-sm">修改</button>
+						<button type="button" class="btn btn-danger btn-sm">清除</button>
+						<button type="button" class="btn btn-info btn-sm">详情</button>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<input type="checkbox" value="3">
+					</th>
+					<th>001001001001</th>
+					<th>杨文迪真的好</th>
+					<th>劳务合同</th>
+					<th>已转正</th>
+					<th>2017-07-20</th>
+					<th>2017-07-20</th>
+					<th>产品经理</th>
+					<th>杨文迪真的好</th>
+					<th>
+						<button type="button" class="btn btn-success btn-sm">修改</button>
+						<button type="button" class="btn btn-danger btn-sm">清除</button>
+						<button type="button" class="btn btn-info btn-sm">详情</button>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<input type="checkbox" value="4">
+					</th>
+					<th>001001001001</th>
+					<th>杨文迪真的好</th>
+					<th>劳务合同</th>
+					<th>已转正</th>
+					<th>2017-07-20</th>
+					<th>2017-07-20</th>
+					<th>产品经理</th>
+					<th>杨文迪真的好</th>
+					<th>
+						<button type="button" class="btn btn-success btn-sm">修改</button>
+						<button type="button" class="btn btn-danger btn-sm">清除</button>
+						<button type="button" class="btn btn-info btn-sm">详情</button>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<input type="checkbox" value="5">
+					</th>
+					<th>001001001001</th>
+					<th>杨文迪真的好</th>
+					<th>劳务合同</th>
+					<th>已转正</th>
+					<th>2017-07-20</th>
+					<th>2017-07-20</th>
+					<th>产品经理</th>
+					<th>杨文迪真的好</th>
+					<th>
+						<button type="button" class="btn btn-success btn-sm">修改</button>
+						<button type="button" class="btn btn-danger btn-sm">清除</button>
+						<button type="button" class="btn btn-info btn-sm">详情</button>
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		<div class="contract_page">
+			<ul class="pagination">
+				<li><a href="#">&laquo;</a></li>
+				<li class="disabled"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>	
+		</div>	
+	</div>
+</div>
+
+<!-- 模态框（Modal）人事合同查询规则及操作方法 -->
+<div class="modal fade" id="contract_rule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">人事合同查询规则及操作方法</h4>
+            </div>
+            <div class="modal-body">
+				<ul class="list-group">
+					<li class="list-group-item">1.查询项共有六项（加上 <strong style="color: red;">切换更多查询</strong> ）</li>
+					<li class="list-group-item">2.用户需要查询：可以以单栏目查询，也可以精准查询（组合查询）</li>
+					<li class="list-group-item">3.用户查询完后的信息将会在下面列表中重新显示</li>
+					<li class="list-group-item">4.列表中的 <strong style="color: red;">清除</strong> 与列表外的 <strong style="color: red;">清除</strong> 不一样，列表中的限制较为严，只能 <strong style="color: red;">清除</strong> 所在的一行记录，而列表外是根据复选选中的个数进行 <strong style="color: red;">清除</strong> ，有一点是一样的，被 <strong style="color: red;">清除</strong> 的数据将无法复原，所以用户请谨慎 <strong style="color: red;">清除</strong> ！！！</li>
+					<li class="list-group-item">5. <strong style="color: red;">发布信息</strong> 时，出备注外，其余都是 <strong style="color: red;">必填项</strong> </li>
+					<li class="list-group-item">6. <strong style="color: red;">修改</strong> 与 <strong style="color: red;">详情</strong> 两者都会将被查询者所有信息列出， <strong style="color: red;">修改</strong> 时，会限制更改某些地方，而 <strong style="color: red;">详情</strong> 则是禁止所有修改操作</li>
+				</ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 模态框（Modal）发布信息 -->
+<div class="modal fade" id="contract_add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">人事合同--发布信息</h4>
+            </div>
+            <div class="modal-body">
+				<form action="" method="post" enctype="multipart/form-data" id="contract_information"> 
+					<table class="table table-bordered table-striped table-hover">
+					  <tbody>
+					    <tr>
+					      <th><input type="hidden" name="" value="员工ID" />单位员工：<span style="color:red;">(*)</span></th>
+					      <th><span class="PC_span"><input type="text" name="" class="form-control" disabled />&ensp;<a href="javascript:;">+选择员工</a></span></th>
+					    </tr>
+					    <tr>
+					      <th>员工薪资：<span style="color:red;">(*)</span></th>
+					      <th><span class="PC_span"><input type="text" name="" class="form-control" value="5000.00" />&ensp;元（￥）</span></th>
+					    </tr>
+					    <tr>
+					      <th>合同编号：<span style="color:red;">(*)</span></th>
+					      <th><input type="text" name="" class="form-control" value="C20170203123010" disabled /></th>
+					    </tr>
+					    <tr>
+					      <th>合同类型：<span style="color:red;">(*)</span></th>
+					      <th>
+					      	<select name="" class="form-control">
+								<option value="">请选择类型</option>
+								<option value="1">劳务合同</option>
+								<option value="2">保密合同</option>
+								<option value="3">其它</option>
+					      	</select>
+					      </th>
+					    </tr>
+					    <tr>
+					      <th>合同状态：<span style="color:red;">(*)</span></th>
+					      <th>
+					      	<select name="" class="form-control">
+								<option value="">请选择状态</option>
+								<option value="1">试用期</option>
+								<option value="2">已转正</option>
+								<option value="3">已解除</option>
+					      	</select>
+					      </th>
+					    </tr>
+					    <tr>
+					      <th>合同签订日期：<span style="color:red;">(*)</span></th>
+					      <th><input type="text" name="singDate" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" readonly /></th>
+					    </tr>
+					    <tr>
+					      <th>试用生效日期：<span style="color:red;">(*)</span></th>
+					      <th><input type="text" name="" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" readonly /></th>
+					    </tr>
+					    <tr>
+					      <th>试用到期日期：<span style="color:red;">(*)</span></th>
+					      <th><input type="text" name="" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" readonly /></th>
+					    </tr>
+					    <tr>
+					      <th>合同到期日期：<span style="color:red;">(*)</span></th>
+					      <th><input type="text" name="singDate_out" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" readonly /></th>
+					    </tr>
+					    <tr>
+					      <th>附件文档上传：<span style="color:red;">(*)</span></th>
+					      <th><input type="file" name="" /></th>
+					    </tr>
+					    <tr>
+					      <th>备注：</th>
+					      <th><textarea name="" class="form-control"></textarea></th>
+					    </tr>
+					  </tbody>
+					</table>
+				</form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary" form="contract_information">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>

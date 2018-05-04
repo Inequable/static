@@ -1,0 +1,78 @@
+/* 公共办公系统所有样式 */
+/* 此样式形式，必须以有关的html文件名的“前缀+_”开头，以便查找修改 */
+
+/* 人事合同（Personnel contract） */
+.breadcrumb{
+	margin-bottom: 0;
+}
+.tab-content .well{
+	margin-bottom: 0;
+}
+.contract .form-control {
+    height: 27px;
+    padding: 0px 10px;
+}
+.contract .form-inline{
+	border-bottom: 1px solid #4300b3;
+	padding-bottom: 10px;
+}
+.contract .contract_more {
+    margin-top: 10px;
+}
+.contract_list th{
+	text-align: center;
+}
+.contract_list .table > tbody > tr > th{
+	line-height: 2;
+}
+.contract_list .table{
+	margin-bottom: 0;
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+}
+.contract_list .table-hover > tbody > tr:hover {
+    background-color: #7fb6d4;
+}
+.contract_list .data-wrap{
+	margin: 10px;
+}
+.contract_page {
+    text-align: center;
+}
+.contract_page .pagination {
+    margin: 10px 0;
+}
+#contract_information .form-control{
+	width: auto;
+}
+#contract_information .PC_span{
+	overflow-x: overlay;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: ruby;
+}
+
+/* 个人信息管理 */
+.personal_information table th:nth-child(odd){
+	/*width: 15%;*/
+	line-height: 2;
+}
+.personal_information table th:nth-child(even){
+	background-color: #fff;
+}
+.personal_information textarea{
+	resize:none
+}
+.personal_information .form-control{
+	width: auto;
+}
+
+/*规章制度（Rules and regulations）以 RAR_ 为前缀*/
+
+/*档案中心（File center）以 FC_ 为前缀*/
+
+/*网络硬盘（Network hard disk）以 NHD_ 为前缀*/
+
+/*实用工具（Utilities）以 U_ 为前缀*/
+
+/*客户信息（Customer information）以 CI_ 为前缀*/

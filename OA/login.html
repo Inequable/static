@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <title>后台登录</title>
+    <link rel="stylesheet" type="text/css" href="public/style/login.css" />
+</head>
+<body>
+    <div class="login">
+        <div class="login_div">
+            <form method="post" action="index.php?m=back&c=User&a=login" class="login_form">
+                <div class="username">
+                    <label for="username">用户名：</label>
+                    <input type="text" name="username" id="username" placeholder="用户名" class="input_username">
+                </div>
+                <div class="password">
+                    <label for="password">密码：</label>
+                    <input type="password" name="password" id="password" placeholder="用户密码" class="input_password">
+                </div>
+                <div class="captcha">
+                    <label for="captcha">验证码：</label>
+                    <input type="text" name="captcha" id="captcha"  placeholder="验证码" maxlength="5" class="input_captcha">
+                    <img src="index.php?m=back&c=User&a=captcha" alt="验证码" onClick="create_code()" title="看不清！点击图片更换！" />
+                </div>
+                <input type="submit" name="submit" value="登录" class="input_submit" />
+            </form>
+        </div>
+    </div>
+    <script>
+        function create_code(){
+            document.getElementById('yzm').src = 'index.php?m=back&c=User&a=captcha&'+Math.random()*10000;
+        }
+    </script>
+</body>
+</html>

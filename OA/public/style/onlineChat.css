@@ -1,0 +1,7 @@
+/* 网上交流系统css样式表 */
+/* 领导信箱leaderMailbox LM_ */
+.LM .form-control{
+	width: auto;
+	/*display: inline;*/
+	height: auto;
+}

@@ -1,0 +1,1 @@
+public是所有的字体文件库（fonts）、图片库（img）、JavaScript库（js）以及css样式库（style）所放置的文件夹

@@ -1,0 +1,17 @@
+/*员工详情样式表*/
+.table caption{
+	text-align: center;
+}
+.table .img-thumbnail{
+	height: 150px;
+	width: 120px;
+}
+.table > tbody > tr > th{
+	vertical-align: middle;
+	text-align: center;
+}
+.table > tbody > tr > td{
+	vertical-align: middle;
+	/*text-align: center;*/
+	font-weight: bold;
+}

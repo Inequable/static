@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>OA系统后台首页 —— 杨文迪</title>
+	<link rel="stylesheet" type="text/css" href="public/style/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="public/style/index.css" />
+	<link rel="stylesheet" type="text/css" href="public/style/tree.css" />
+	<link rel="stylesheet" type="text/css" href="public/style/publicOffice.css" />
+	<link rel="stylesheet" type="text/css" href="public/style/IntegratedAdministrative.css" />
+	<link rel="stylesheet" type="text/css" href="public/style/privileges.css" />
+	<link rel="stylesheet" type="text/css" href="public/js/layer/mobile/need/layer.css" />
+	<script type="text/javascript" src="public/js/news.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+		<!-- header头部 start -->
+			<div class="header">
+			<!-- logo start -->
+				<div class="col-md-3 logo">
+					<h2 class="text-center">OA系统LOGO</h2>
+				</div>
+			<!-- logo end -->
+			<!-- 用户登录凭证 start -->
+				<div class="col-md-2 col-md-offset-7 session">
+					<span>
+						欢迎 <a href="#d" data-toggle="pill"><span class="glyphicon glyphicon-user">admin</span></a> 登录
+					</span>
+					&nbsp;
+					<button class="btn btn-success btn-sm" onclick="if(confirm('确定要退出系统吗？')) return true; return false;">注销用户</button>
+				</div>
+			<!-- 用户登录凭证 end -->
+			<!-- 滚动信息栏 start -->
+				<div class="information">
+					<hr />
+				<!-- 消息部分 start -->
+					<div class="col-md-4">
+						<ul class="list-inline">
+							<li>
+								<a href="#">
+									<span class="glyphicon glyphicon-comment"></span>
+									<span class="badge pull-right">3</span> 我的消息
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="glyphicon glyphicon-envelope"></span>
+									<span class="badge pull-right">50</span> 未查看邮件
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="glyphicon glyphicon-list-alt"></span>
+									<span class="badge pull-right">50</span> 待办任务
+								</a>
+							</li>
+						</ul>
+					</div>
+				<!-- 消息部分 end -->
+				<!-- 滚动栏消息 start -->
+					<div class="col-md-8">
+						<div id="news" data-toggle="modal" data-target="#myModal">
+							<div id="scroll_div" class="scroll_div"> 
+								<div id="scroll_begin"> 
+									<span style="color: #000;font-size: 14px;"><i class="glyphicon glyphicon-volume-up"></i>【公告】</span>
+									<a href="#"><span>1这是开始的地方这是开始的地方</span></a>
+									<a href="#"><span>2这是开始的地方这是开始的地方</span></a>
+									<a href="#"><span>3这是开始的地方这是开始的地方</span></a>
+									<a href="#"><span>4这是开始的地方这是开始的地方</span></a>
+									<a href="#"><span>5这是开始的地方这是开始的地方</span></a>
+									<a href="#"><span>6这是开始的地方这是开始的地方</span></a>
+									<a href="#"><span>这是结束的地方</span></a>
+									<!-- <marquee direction="left" scrolldelay="150"><a href="#"><span>这个是滚动标签</span></a></marquee> -->
+								</div> 
+								<div id="scroll_end"></div> 
+							</div> 
+							<script type="text/javascript">ScrollImgLeft();</script>
+						</div>
+					</div>
+				<!-- 滚动栏信息 end -->
+					<hr />
+				</div>
+			<!-- 滚动信息栏 end -->
+			</div>
+		<!-- header头部 end -->	
+		<div class="middle">
+		<!-- left部分 start -->	
+			<div class="left col-md-2">
+				<div class="power page-header">
+					<h4><i class="glyphicon glyphicon-tasks"></i> 应用功能</h4>
+				</div>
+				<div class="tree well">
+
+					<ul class="nav nav-pills nav-stacked">
+						<li class="parent_li">
+							<span><i class="glyphicon glyphicon-minus-sign"></i> 公共办公系统测试</span>
+							<ul>
+								<li class="active" style="display: list-item;">
+									<span>
+										<i class="glyphicon glyphicon-hand-right"></i>
+										<a href="#a" data-toggle="pill">人事合同测试层</a>
+									</span>
+								</li>
+								<li class="" style="display: list-item;">
+									<span>
+										<i class="glyphicon glyphicon-hand-right"></i>
+										<a href="#b" data-toggle="pill">人事合同</a>
+									</span>
+								</li>
+								<li class="" style="display: list-item;">
+									<span>
+										<i class="glyphicon glyphicon-hand-right"></i>
+										<a href="#c" data-toggle="pill">测试层3</a>
+									</span>
+								</li>
+								<li class="" style="display: list-item;">
+									<span>
+										<i class="glyphicon glyphicon-plus-sign"></i>
+										测试层4
+									</span>
+									<ul>
+										<li class="">
+											<span>
+												<i class="glyphicon glyphicon-hand-right"></i>
+												<a href="#e" data-toggle="pill">测试层5</a>
+											</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<!-- 一级目录树 -->
+				    <ul>
+				        <li class="parent_li">
+				            <span title="关闭"><i class="glyphicon glyphicon-minus-sign"></i> 公共办公系统</span>
+							<!-- 二级目录树 -->
+				            <ul>
+				            	<li style="display: list-item;">
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">知识管理</a>
+					                </span>
+					            </li>
+					            <li style="display: list-item;">
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">下载中心</a>
+					                </span>
+					            </li>
+					            <li style="display: list-item;">
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">规章制度</a>
+					                </span>
+					            </li>
+					            <li style="display: list-item;">
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">档案中心</a>
+					                </span>
+					            </li>
+					            <li style="display: list-item;">
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">网络硬盘</a>
+					                </span>
+					            </li>
+					            <li style="display: list-item;">
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">实用工具</a>
+					                </span>
+					            </li>
+				                <li style="display: list-item;">
+				                    <span title="关闭"><i class="glyphicon glyphicon-plus-sign"></i> 人力资源</span>
+				                    <!-- 三级目录树 -->
+				                    <ul>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">部门设置</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">岗位设置</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">档案管理</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">培训记录</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">奖惩记录</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">职位变更</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">人事合同</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">类别维护</a>
+				                            </span>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li style="display: list-item;">
+				                    <span title="关闭"><i class="glyphicon glyphicon-plus-sign"></i> 客户管理</span>
+				                    <!-- 三级目录树 -->
+				                    <ul>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">客户信息</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">查看全部客户</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">代理商信息</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">联系人信息</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">采购信息</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">项目</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">跟单记录</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">合同管理</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">故障维修</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">客户管理维护</a>
+				                            </span>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li style="display: list-item;">
+				                    <span title="关闭"><i class="glyphicon glyphicon-plus-sign"></i> 系统管理</span>
+				                    <!-- 三级目录树 -->
+				                    <ul>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">组织机构</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">岗位定义</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">用户账号</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">权限组</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">公共通讯组</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">系统日志</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">基础数据设置</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">后台数据设置</a>
+				                            </span>
+				                        </li>
+				                    </ul>
+				                </li>
+				            </ul>
+				        </li>
+				    </ul>
+				    <!-- 一级目录树 -->
+				    <ul>
+				        <li class="parent_li">
+				            <span title="关闭"><i class="glyphicon glyphicon-plus-sign"></i> 公共办公系统</span>
+							<!-- 二级目录树 -->
+				            <ul>
+				            	<li>
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">知识管理</a>
+					                </span>
+					            </li>
+					            <li>
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">下载中心</a>
+					                </span>
+					            </li>
+					            <li>
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">规章制度</a>
+					                </span>
+					            </li>
+					            <li>
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">档案中心</a>
+					                </span>
+					            </li>
+					            <li>
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">网络硬盘</a>
+					                </span>
+					            </li>
+					            <li>
+					                <span><i class="glyphicon glyphicon-hand-right"></i> 
+					                	<a href="#">实用工具</a>
+					                </span>
+					            </li>
+				                <li>
+				                    <span title="关闭"><i class="glyphicon glyphicon-plus-sign"></i> 人力资源</span>
+				                    <!-- 三级目录树 -->
+				                    <ul>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">部门设置</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">岗位设置</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">档案管理</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">培训记录</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">奖惩记录</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">职位变更</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">人事合同</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">类别维护</a>
+				                            </span>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <span title="关闭"><i class="glyphicon glyphicon-plus-sign"></i> 客户管理</span>
+				                    <!-- 三级目录树 -->
+				                    <ul>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">客户信息</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">查看全部客户</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">代理商信息</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">联系人信息</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">采购信息</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">项目</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">跟单记录</a>
+				                           </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">合同管理</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">故障维修</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">客户管理维护</a>
+				                            </span>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <span title="关闭"><i class="glyphicon glyphicon-plus-sign"></i> 系统管理</span>
+				                    <!-- 三级目录树 -->
+				                    <ul>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">组织机构</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">岗位定义</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">用户账号</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">权限组</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">公共通讯组</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">系统日志</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">基础数据设置</a>
+				                            </span>
+				                        </li>
+				                        <li>
+				                            <span><i class="glyphicon glyphicon-hand-right"></i> 
+				                            	<a href="#">后台数据设置</a>
+				                            </span>
+				                        </li>
+				                    </ul>
+				                </li>
+				            </ul>
+				        </li>
+				    </ul>
+				</div>
+			</div>
+		<!-- left部分 end -->	
+		<!-- right部分 start -->	
+			<div class="right col-md-10">
+				<div class="panel panel-default">
+					<!-- 点开的功能模块标签 -->
+					<div class="panel-heading">
+						<ol class="breadcrumb">
+							<li><a href="#">公共办公系统测试</a></li>
+							<li class="active">人事合同测试层</li>
+						</ol>
+					</div>
+					<!-- 功能模块内容 -->
+					<div class="tab-content panel-body">
+						<div class="tab-pane fade in active" id="a"></div>
+						<div class="tab-pane fade" id="b"></div>
+						<div class="tab-pane fade" id="c"></div>
+						<div class="tab-pane fade" id="d"></div>
+						<div class="tab-pane fade" id="e"></div>
+					</div>
+				</div>
+			</div>
+		<!-- right部分 end -->	
+		</div>
+		<!-- footer start -->	
+			<div class="footer">
+				<div class="container footer_item">
+					<div class="col-md-12 text-center">
+						地址：陆丰&nbsp;&nbsp;QQ：992307026&nbsp;&nbsp;电话：15014369562&nbsp;&nbsp;邮箱：992307026@qq.com&nbsp;&nbsp;本站技术支持：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=992307026&amp;site=qq&amp;menu=yes">頔</a>
+					</div>
+					<div class="col-md-12 text-center">
+						Copyright 2017.07.12 by <a href="#">www.yangwendi.cn</a> all rights reserved 2017年7月第1版
+					</div>
+				</div>
+			</div>
+		<!-- footer end -->	
+		</div>
+	</div>
+
+<!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					公告详情
+				</h4>
+			</div>
+				<div class="modal-body">
+					<div class="panel-group" id="desc">
+					    <div class="panel panel-default">
+					        <div class="panel-heading">
+					            <h4 class="panel-title">
+					                <a data-toggle="collapse" data-parent="#desc" 
+					                href="#desc0">
+					                点击我进行展开，再次点击我进行折叠。第 1 部分
+					                </a>
+					            </h4>
+					        </div>
+					        <div id="desc0" class="panel-collapse collapse in">
+					            <div class="panel-body">
+					                Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+					                cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+					                vice lomo.
+					            </div>
+					        </div>
+					    </div>
+					    <div class="panel panel-default">
+					        <div class="panel-heading">
+					            <h4 class="panel-title">
+					                <a data-toggle="collapse" data-parent="#desc" 
+					                href="#desc1">
+					                点击我进行展开，再次点击我进行折叠。第 2 部分
+					            </a>
+					            </h4>
+					        </div>
+					        <div id="desc1" class="panel-collapse collapse">
+					        <div class="panel-body">
+					            Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+					            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+					            vice lomo.
+					        </div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+	</div>
+
+	<script type="text/javascript" src="public/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="public/js/tree.js"></script>
+	<script type="text/javascript" src="public/js/load.js"></script>
+	<script type="text/javascript" src="public/js/WdatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="public/js/layer/layer.js"></script>
+</body>
+</html>

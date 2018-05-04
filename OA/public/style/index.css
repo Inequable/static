@@ -1,0 +1,139 @@
+body{
+	background-color: rgba(212, 212, 212, 0.48);
+}
+div{
+	overflow: hidden;
+}
+span{
+	cursor: default;
+}
+hr{
+	margin-top: 5px;
+	margin-bottom: 6px;
+	clear: both;
+}
+/*header start*/
+.header{
+	/*height: 113px;*/
+	background: -webkit-linear-gradient(left, #3daab0 , #326d8d);
+	background: -o-linear-gradient(left, #3daab0 , #326d8d);
+	background: -moz-linear-gradient(left, #3daab0 , #326d8d);
+	background: linear-gradient(to left, #3daab0 , #326d8d);
+}
+.logo{
+	height: 80px;
+}
+.session{
+	padding: 10px;
+}
+.session a{
+	color: #00db41;
+}
+.session a:hover{
+	color: #0ff;
+}
+.session a span{
+	cursor: pointer;
+}
+.information{
+	clear: both;
+	background-color: #70A2D5E6;
+	background-image: url("../img/i1.png");
+/*	border-radius: 20px;
+	border: 1px solid burlywood;*/
+}
+.information ul{
+	margin-left: 15px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+.information ul a{
+	color: #ececec;
+	font-weight: bold;
+}
+.information ul a:hover{
+	color: #0ff;;
+}
+#news{
+	overflow:hidden;
+	font-size:13px;
+	font-family:'宋体';
+	background:#DDE5ED;
+	font-weight:bold;
+} 
+#news #scroll_begin, #news #scroll_end{
+	display:inline;
+} 
+.scroll_div{
+	width: 90%;
+	margin: 0 auto;
+	white-space: nowrap;
+	overflow:hidden;
+	padding: 4px;
+}
+/*header end*/
+
+/*left start*/
+.left{
+	/*height: 72vh;*/
+	background-color: #629dbd;
+	/*overflow-y: auto;*/
+	margin-bottom: -3000px;
+	padding-bottom: 3000px;
+}
+.power {
+    margin: 20px 0 10px;
+}
+.parent_li ul li{
+	display: none;
+}
+.nav-stacked > li + li {
+    margin-top: 0;
+    margin-left: 0;
+}
+/*left end*/
+
+/*right start*/
+.right{
+	/*min-height: 72vh;*/
+	background-color: #fff;
+	margin-bottom: -3000px;
+	padding-bottom: 3000px;
+	padding-right: 25px;
+	padding-top: 40px;
+	background-color: #629dbd;
+
+}
+.right .panel-body{
+	overflow-y: auto;
+	max-height: 836px;
+}
+/*right end*/
+
+/*footer start*/
+.footer{
+	clear: both;
+	background-color: #337599;
+	color: #fff;
+}
+.footer a{
+	color: #fff;
+}
+.footer a:hover{
+	color: #00724e;
+}
+.footer_item {
+    padding: 20px;
+}
+/*footer end*/
+
+/* 模态框 */
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #337ab7;
+    color: #fff;
+}
+.modal-body .list-group{
+	margin-bottom: 0;
+}
