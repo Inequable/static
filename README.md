@@ -1,3 +1,6 @@
+# 体验网址
+(✈️ 静态网站访问网址)[https://inequable.github.io/static/]
+
 # static web
 这是一个上传自己制作静态网站的仓库。。。
 
